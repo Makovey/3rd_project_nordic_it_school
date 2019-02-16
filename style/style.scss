@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: beige;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.catalog{
+    &-cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &-item{
+            border: 1px solid black;
+            padding: 10px;
+            width: 30%;
+            margin-bottom: 10px;
+            text-align: center;
+
+            .add-to-basket{
+                padding: 10px 5px;
+                background-color: rgb(22, 178, 126);
+                text-align: center;
+                color: #ffffff;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+}
