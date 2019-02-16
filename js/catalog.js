@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function(){
             let cardItemElement = document.createElement('div');
             cardItemElement.classList.add('catalog-cards-item');
             cardItemElement.innerHTML = `
-                <img src='${cardItem.img_src}'>
-                <div class='name'>${cardItem.name}</div>
+                <a href="/product.php?id=${cardItem.id}"><img src='${cardItem.img_src}'></a>
+                <div class='name'><a href="/product.php?id=${cardItem.id}">${cardItem.name}</a></div>
                 <div class='price'>${cardItem.price} руб.</div>
                 <div class='add-to-basket' data-product-id='${cardItem.id}'>Добавить в корзину</div>
             `;
