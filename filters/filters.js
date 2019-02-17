@@ -1,9 +1,5 @@
 connectToBase();
-[].forEach.call(document.getElementsByTagName('select'),select=>{
-    select.onchange=function(){
-        connectToBase();
-    }
-});
+[].forEach.call(document.getElementsByTagName('select'),select=>{select.onchange=connectToBase;});
 function connectToBase(){
     let responseDiv=document.querySelector('.response'),
             xhr=new XMLHttpRequest(),
