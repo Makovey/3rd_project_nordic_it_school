@@ -13,7 +13,6 @@ function connectToBase(){
         if(this.readyState!=4)return;
         if(this.status==200){
             let response='';
-            console.log(this.responseText);
             JSON.parse(this.responseText).forEach((element,index)=>{
                 if(element==null)return;
                 response+=`<span style='color:crimson;'>${index+1} товар:</span> ${element.name}, категория - ${element.category}, размер - ${element.size}, стоимость - ${element.price}<br>`;
