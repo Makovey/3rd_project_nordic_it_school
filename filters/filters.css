@@ -1,0 +1,16 @@
+.div-select{
+    float:left;
+    margin-right:10px;
+}
+
+label{
+    display: block;
+}
+
+select{
+    margin-top:5px;
+}
+
+.response{
+    margin-top:10px;
+}
