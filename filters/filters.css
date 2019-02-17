@@ -14,3 +14,7 @@ select{
 .response{
     margin-top:10px;
 }
+
+.crimson-color-text{
+    color:crimson;
+}

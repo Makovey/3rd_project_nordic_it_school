@@ -15,9 +15,9 @@ function connectToBase(){
             let response='';
             JSON.parse(this.responseText).forEach((element,index)=>{
                 if(element==null)return;
-                response+=`<span style='color:crimson;'>${index+1} товар:</span> ${element.name}, категория - ${element.category}, размер - ${element.size}, стоимость - ${element.price}<br>`;
+                response+=`<span class='crimson-color-text'>${index+1} товар:</span> ${element.name}, категория - ${element.category}, размер - ${element.size}, стоимость - ${element.price}<br>`;
             });
-            responseDiv.innerHTML=response;
+            responseDiv.innerHTML=response||'<span class="crimson-color-text">Ни один товар не подходит под данные критерии.</span>';
         }
     };
 }

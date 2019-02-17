@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: beige;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.catalog-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-cards-item {
+  border: 1px solid black;
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.catalog-cards-item .add-to-basket {
+  padding: 10px 5px;
+  background-color: #16b27e;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=style.css.map */
