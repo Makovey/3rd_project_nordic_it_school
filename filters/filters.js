@@ -6,7 +6,7 @@ function connectToBase(){
         categoryValue=document.querySelector('[name="category"]').value,
         sizeValue=document.querySelector('[name="size"]').value,
         priceValue=document.querySelector('[name="price"]').value;
-    xhr.open('post','filters-ajax.php');
+    xhr.open('post','filters.php');
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xhr.send(`category=${categoryValue}&size=${sizeValue}&price=${priceValue}`);
     xhr.onreadystatechange=function(){
