@@ -1,6 +1,6 @@
 <?php
-    $link=mysqli_connect('localhost', 'root', '', 'filters');
-    mysqli_set_charset($link, 'utf8');
+    $link=mysqli_connect('localhost','root','','filters');
+    mysqli_set_charset($link,'utf8');
     $sql="select*from products";
     $category_exist=$_POST['category']!='Не важно';
     $size_exist=$_POST['size']!='Не важно';
