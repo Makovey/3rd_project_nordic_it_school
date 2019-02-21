@@ -18,6 +18,6 @@ function connectToBase(){
                 response+=`<span class='crimson-color-text'>${index+1} товар:</span> ${element.name}, категория - ${element.category}, размер - ${element.size}, стоимость - ${element.price}<br>`;
             });
             responseDiv.innerHTML=response||'<span class="crimson-color-text">Ни один товар не подходит под данные критерии.</span>';
-        }
+        }else responseDiv.innerHTML='<span class="crimson-color-text">Ошибка подключения к базе данных.</span>';
     };
 }
